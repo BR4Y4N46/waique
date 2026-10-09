@@ -876,7 +876,61 @@ footer{
   .galeria-yage{grid-template-columns:1fr;gap:14px}
   .foto-yage{aspect-ratio:4/3}
 }
-`;
+/* ============================================================
+   🎬 VIDEOS EN PILARES
+   ============================================================ */
+.pilar .video-pilar{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/10;
+  margin-bottom:26px;
+  border-radius:3px;
+  overflow:hidden;
+  border:1px solid var(--borde-suave);
+  background:rgba(0,0,0,.4);
+  transition:border-color .4s, transform .4s;
+}
+.pilar:hover .video-pilar{
+  border-color:var(--borde);
+}
+.pilar .video-pilar::before{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(14,10,7,.55) 0%,
+    transparent 45%
+  );
+  pointer-events:none;
+  z-index:2;
+}
+.pilar .video-pilar video{
+  width:100%;height:100%;
+  object-fit:cover;
+  display:block;
+  filter:saturate(.92) brightness(.92);
+  transition:transform .8s ease, filter .5s;
+}
+.pilar:hover .video-pilar video{
+  transform:scale(1.06);
+  filter:saturate(1.05) brightness(1);
+}
+.pilar .video-pilar .marca-video{
+  position:absolute;top:12px;right:12px;
+  z-index:3;
+  width:26px;height:26px;
+  border-radius:50%;
+  border:1px solid rgba(244,234,216,.4);
+  background:rgba(14,10,7,.45);
+  backdrop-filter:blur(8px);
+  display:grid;place-items:center;
+  font-size:10px;
+  color:var(--ocre-suave);
+  letter-spacing:.05em;
+}
+@media(max-width:760px){
+  .pilar .video-pilar{aspect-ratio:16/9}
+}`;
 
 /* ============================================================
    HOOK REVEAL
