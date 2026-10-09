@@ -929,7 +929,7 @@ footer{
   letter-spacing:.05em;
 }
 @media(max-width:760px){
-  .pilar .video-pilar{aspect-ratio:16/9}
+  .pilar .video-pilar{aspect-ratio:3/4}
 }`;
 
 /* ============================================================
