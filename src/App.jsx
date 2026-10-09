@@ -882,7 +882,7 @@ footer{
 .pilar .video-pilar{
   position:relative;
   width:100%;
-  aspect-ratio:16/10;
+  aspect-ratio:4/3;
   margin-bottom:26px;
   border-radius:3px;
   overflow:hidden;
