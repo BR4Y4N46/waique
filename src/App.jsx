@@ -1091,6 +1091,17 @@ function QuienesSomos() {
 
         <div className="pilares" data-reveal>
           <div className="pilar">
+            <div className="video-pilar">
+              <video
+                src="/video1.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+              <span className="marca-video">✦</span>
+            </div>
             <div className="num">I</div>
             <h3>Guardianes del saber</h3>
             <p>
@@ -1101,6 +1112,17 @@ function QuienesSomos() {
           </div>
 
           <div className="pilar">
+            <div className="video-pilar">
+              <video
+                src="/video2.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+              <span className="marca-video">✦</span>
+            </div>
             <div className="num">II</div>
             <h3>La selva viviente</h3>
             <p>
@@ -1111,6 +1133,17 @@ function QuienesSomos() {
           </div>
 
           <div className="pilar">
+            <div className="video-pilar">
+              <video
+                src="/video3.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+              <span className="marca-video">✦</span>
+            </div>
             <div className="num">III</div>
             <h3>El tejido de la cura</h3>
             <p>
